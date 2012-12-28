@@ -9,7 +9,7 @@
     },
     
     "autoload": {
-        "psr-0": {  "Simplex": "src/",
+        "psr-0": {  "Smiffony": "src/",
                     "Calendar": "src/"}
     }
 }

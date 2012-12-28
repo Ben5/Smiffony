@@ -19,15 +19,15 @@ $routes  = include __DIR__.'/../src/app.php';
 
 $dispatcher = new EventDispatcher();
 
-$dispatcher->addSubscriber(new Simplex\ContentLengthListener());
-$dispatcher->addSubscriber(new Simplex\GoogleListener());
+$dispatcher->addSubscriber(new Smiffony\ContentLengthListener());
+$dispatcher->addSubscriber(new Smiffony\GoogleListener());
 
 $context = new Routing\RequestContext();
 $context->fromRequest($request);
 $matcher = new Routing\Matcher\UrlMatcher($routes, $context);
 $resolver = new ControllerResolver();
 
-$framework = new Simplex\Framework($matcher, $resolver, $dispatcher);
+$framework = new Smiffony\Framework($matcher, $resolver, $dispatcher);
 $framework = new HttpCache($framework, new Store(__DIR__.'/../cache'), new Esi());
 
 $response = $framework->handle($request);

@@ -1,5 +1,5 @@
 {
-    "hash": "29c0fa2d3840ad8266aeeb90b24a4886",
+    "hash": "03ddb32d1e54866bdb0eb9448d1bc78b",
     "packages": [
         {
             "name": "phpunit/php-code-coverage",
