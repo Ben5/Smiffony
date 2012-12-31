@@ -21,15 +21,15 @@ class LeapYearController
         {
             ob_start();
             include __DIR__.'/../../pages/leapyear.php';
-            $response = new Response(ob_get_clean().rand());  
+            //$response = new Response(ob_get_clean().rand());  
+            $responseString = ob_get_clean().rand();  
         }
         else
         {
-            $response = new Response('Nope, not a leap year');
+            //$response = new Response('Nope, not a leap year');
+            $responseString = 'Nope, not a leap year';
         }
 
-        $response->setTtl(10);
-
-        return $response;
+        return $responseString;
     }
 }
