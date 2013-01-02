@@ -11,3 +11,4 @@ I am building this on stack of Nginx and PHP-FPM instead of my more familiar Apa
 
 I have now completed the tutorial, and will now be looking to incorporate the Smiffony framework into some other projects.
 
+The code contains a very simple sample app to check that the framework is working correctly - going to "http://www.example.com/is_leap_year/{YEAR}" will figure out if {YEAR} is a leapyear or not, and show the answer on the screen.
