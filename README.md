@@ -9,3 +9,5 @@ My aim is to get a better understanding of how Symfony2 works, rather than just 
 
 I am building this on stack of Nginx and PHP-FPM instead of my more familiar Apache 2.2, and my impressions so far are good. I will probably have to get this framework running on Apache soon, so that I can run performance comparisons (for science!).
 
+I have now completed the tutorial, and will now be looking to incorporate the Smiffony framework into some other projects.
+
